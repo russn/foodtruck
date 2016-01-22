@@ -1,7 +1,7 @@
 # R code for redoing preliminary analyses
 library(igraph)
 
-trucks <- read.csv("just truck-trucks.csv",header=TRUE) # read in data
+trucks <- read.csv("data/just-truck-trucks.csv",header=TRUE) # read in data
 edgelist <- trucks[,c("sender", "recipient")] # create edgelist
 
 igraph <- graph.data.frame(edgelist) #convert edgelist to igraph object
